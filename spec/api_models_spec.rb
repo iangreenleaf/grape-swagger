@@ -308,6 +308,6 @@ describe 'API Models' do
   it 'includes an id equal to the model name' do
     get '/swagger_doc/thing_with_root'
     result = JSON.parse(last_response.body)
-    expect(result['models']['thing']['id']).to eq('thing')
+    expect(result['models']['ThingWithRoot']['id']).to eq('ThingWithRoot')
   end
 end
